@@ -27,7 +27,7 @@ public class BasicApplicationTests {
         request.setWallaetReffrence("wallet-cocowawa");
         CashOutRequest cashOutRequest = new CashOutRequest();
         cashOutRequest.setHeader(header);
-        cashOutRequest.setRequest(request);
+        cashOutRequest.setRequest(request); 
         cashOutJMSSender.sendTOQueue(cashOutRequest);
     }
 
